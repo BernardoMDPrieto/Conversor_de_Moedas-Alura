@@ -6,10 +6,10 @@ public class Conversor {
 
     ApiService apiService = new ApiService();
 
-    public double converter(String baseCode, String targetCode, double valor) {
+    public double converter(String baseCode, String targetCode, double value) {
         double exchangeRateate = apiService.getExchangeRate(baseCode, targetCode);
 
-        return valor * exchangeRateate;
+        return value * exchangeRateate;
     }
 
     public Map<String, Double> getAvailableCurrencies(String baseCode) {

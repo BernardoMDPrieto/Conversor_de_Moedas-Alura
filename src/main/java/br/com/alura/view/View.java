@@ -31,7 +31,6 @@ public class View {
     }
 
     public void showCurrencyOptions() {
-        showMessage("Insira o código da moeda base (por exemplo, USD):");
         Map<String, Double> baseCurrencies = conversor.getAvailableCurrencies("USD");
 
         if (baseCurrencies != null && !baseCurrencies.isEmpty()) {
